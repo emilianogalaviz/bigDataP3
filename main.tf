@@ -1,3 +1,8 @@
+# Buscar el rol de AWS Academy
+data "aws_iam_role" "lab_role" {
+  name = "LabRole"
+}
+
 resource "aws_s3_bucket" "transactions_bucket" {
   bucket        = var.bucket_name
   force_destroy = true
