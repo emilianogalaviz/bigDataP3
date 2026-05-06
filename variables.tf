@@ -10,5 +10,5 @@ variable "project_name" {
 
 variable "bucket_name" {
   type    = string
-  default = "uag-bigdata-banking-output-emi"
+  default = "uag-bigdata-banking-output-emi-v2"
 }
