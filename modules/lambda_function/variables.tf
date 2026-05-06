@@ -6,3 +6,8 @@ variable "environment_variables" {
   type    = map(string)
   default = {}
 }
+
+variable "lambda_role_arn" {
+  type        = string
+  description = "ARN del LabRole de AWS Academy"
+}

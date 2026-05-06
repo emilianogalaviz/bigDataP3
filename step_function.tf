@@ -1,6 +1,6 @@
 resource "aws_sfn_state_machine" "transaction_pipeline" {
   name     = "${var.project_name}-pipeline"
-  role_arn = aws_iam_role.step_function_role.arn
+  role_arn = data.aws_iam_role.lab_role.arn
 
   definition = jsonencode({
     StartAt = "ValidateTransaction",
